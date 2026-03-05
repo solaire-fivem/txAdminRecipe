@@ -2,6 +2,7 @@ return {
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
+		rarity = 'common',
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
 			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
@@ -12,11 +13,13 @@ return {
 
 	['black_money'] = {
 		label = 'Dirty Money',
+		rarity = 'red',
 	},
 
 	['burger'] = {
 		label = 'Burger',
 		weight = 220,
+		rarity = 'uncommon',
 		client = {
 			status = { hunger = 200000 },
 			anim = 'eating',
@@ -29,6 +32,7 @@ return {
 	['sprunk'] = {
 		label = 'Sprunk',
 		weight = 350,
+		rarity = 'uncommon',
 		client = {
 			status = { thirst = 200000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -42,6 +46,7 @@ return {
 		label = 'Parachute',
 		weight = 8000,
 		stack = false,
+		rarity = 'pink',
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 1500
@@ -50,6 +55,7 @@ return {
 
 	['garbage'] = {
 		label = 'Garbage',
+		rarity = 'lime',
 	},
 
 	['paperbag'] = {
@@ -57,11 +63,13 @@ return {
 		weight = 1,
 		stack = false,
 		close = false,
-		consume = 0
+		consume = 0,
+		rarity = 'gold'
 	},
 
 	['identification'] = {
 		label = 'Identification',
+		rarity = 'silver',
 		client = {
 			image = 'id_card.png'
 		}
@@ -71,6 +79,7 @@ return {
 		label = 'Knickers',
 		weight = 10,
 		consume = 0,
+		rarity = 'purple',
 		client = {
 			status = { thirst = -100000, stress = -25000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -82,21 +91,25 @@ return {
 	['lockpick'] = {
 		label = 'Lockpick',
 		weight = 160,
+		rarity = 'rare',
 	},
 
 	['phone'] = {
 		label = 'Phone',
 		weight = 190,
 		stack = false,
+		rarity = 'epic',
 	},
 
 	['money'] = {
 		label = 'Money',
+		rarity = 'teal',
 	},
 
 	['mustard'] = {
 		label = 'Mustard',
 		weight = 500,
+		rarity = 'orange',
 		client = {
 			status = { hunger = 25000, thirst = 25000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -109,6 +122,7 @@ return {
 	['water'] = {
 		label = 'Water',
 		weight = 500,
+		rarity = 'cyan',
 		client = {
 			status = { thirst = 200000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -123,13 +137,15 @@ return {
 		label = 'Radio',
 		weight = 1000,
 		stack = false,
-		allowArmed = true
+		allowArmed = true,
+		rarity = 'blue'
 	},
 
 	['armour'] = {
 		label = 'Bulletproof Vest',
 		weight = 3000,
 		stack = false,
+		rarity = 'legendary',
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
@@ -139,12 +155,14 @@ return {
 	['clothing'] = {
 		label = 'Clothing',
 		consume = 0,
+		rarity = 'green',
 	},
 
 	['mastercard'] = {
 		label = 'Fleeca Card',
 		stack = false,
 		weight = 10,
+		rarity = 'gold',
 		client = {
 			image = 'card_bank.png'
 		}
@@ -153,6 +171,7 @@ return {
 	['scrapmetal'] = {
 		label = 'Scrap Metal',
 		weight = 80,
+		rarity = 'bronze',
 	},
 
 	["empty_weed_bag"] = {
@@ -188,6 +207,7 @@ return {
 		stack = true,
 		close = false,
 		description = "It is very fragile, watch out",
+		rarity = 'common',
 	},
 
 	["kurkakola"] = {
@@ -234,6 +254,7 @@ return {
 		stack = true,
 		close = false,
 		description = "Some powder to mix with",
+		rarity = 'common',
 	},
 
 	["goldbar"] = {
@@ -242,6 +263,7 @@ return {
 		stack = true,
 		close = true,
 		description = "Looks pretty expensive to me",
+		rarity = 'gold',
 	},
 
 	["veh_plates"] = {
@@ -250,6 +272,7 @@ return {
 		stack = true,
 		close = true,
 		description = "Install vehicle plates",
+		rarity = 'common',
 	},
 
 	["nitrous"] = {
@@ -258,6 +281,7 @@ return {
 		stack = true,
 		close = true,
 		description = "Speed up, gas pedal! :D",
+		rarity = 'common',
 	},
 
 	["firework4"] = {
@@ -1572,6 +1596,7 @@ return {
 		stack = false,
 		close = true,
 		description = "This will change the plate on a car you own!",
+		rarity = 'rainbow',
 	},
 	-- End of MrNewbCustomPlates
 	-- Start of MrNewbWeaponTints
@@ -1584,7 +1609,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.newbserialfile'
 		},
-		consume = 0.50
+		consume = 0.50,
+		rarity = 'legendary',
 	},
 	['greentint'] = {
 		label = 'Green Weapon Tint',
@@ -1595,7 +1621,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 1
-		}
+		},
+		rarity = 'legendary',
 	},
 	['goldtint'] = {
 		label = 'Gold Weapon Tint',
@@ -1606,7 +1633,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 2
-		}
+		},
+		rarity = 'legendary',
 	},
 	['pinktint'] = {
 		label = 'Pink Weapon Tint',
@@ -1617,7 +1645,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 3
-		}
+		},
+		rarity = 'legendary',
 	},
 	['armytint'] = {
 		label = 'Army Weapon Tint',
@@ -1628,7 +1657,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 4
-		}
+		},
+		rarity = 'legendary',
 	},
 	['lspdtint'] = {
 		label = 'LSPD Weapon Tint',
@@ -1639,7 +1669,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 5
-		}
+		},
+		rarity = 'legendary',
 	},
 	['orangetint'] = {
 		label = 'Orange Weapon Tint',
@@ -1650,7 +1681,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 6
-		}
+		},
+		rarity = 'legendary',
 	},
 	['platinumtint'] = {
 		label = 'Platinum Weapon Tint',
@@ -1661,7 +1693,8 @@ return {
 		server = {
 			export = 'MrNewbWeaponTints.setweapontint',
 			tint = 7
-		}
+		},
+		rarity = 'legendary',
 	},
 	-- End of MrNewbWeaponTints
 	-- Start of mana hunting
@@ -1794,6 +1827,7 @@ return {
 		weight = 50,
 		stack = true,
 		close = false,
+		rarity = 'common',
 	},
 	['fishingrod'] = {
 		label = 'Fishing Rod',
@@ -1817,6 +1851,7 @@ return {
 		stack = true,
 		close = true,
 		description = "A box for storing items",
+		rarity = 'common',
 	},
 	["storage_lock"] = {
 		label = "Storage Lock",
